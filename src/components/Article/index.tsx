@@ -23,6 +23,17 @@ export function Article({ article }: ArticleProps) {
 					>{content}</p>
 				))}
 			</div>
+
+			{ article.image &&
+				<img
+					className="sm:p-4"
+					src={article.image}
+					alt={article.alt}
+				/>
+			}
+			{ article.image && article.alt &&
+				<span className="sr-only">{article.alt}</span>
+			}
 		</div>
 	);
 }
