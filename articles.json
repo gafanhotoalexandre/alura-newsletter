@@ -1,5 +1,6 @@
 [
   {
+		"id": 1,
     "title": "Novo Podcast: Bolha Dev",
     "text": [
       "A nossa bolha ficou muito mais unida e informada essa semana, com o lançamento do podcast diário Bolha Dev!  Em todas as tardes de segunda a sexta-feira, Marcus Mendes apresenta as melhores notícias da Newsletter do Filipe Deschamps, além de trazer conteúdos e dicas interessantes do Aluraverso.",
@@ -8,6 +9,7 @@
     "tags": ["podcast", "bolhadev"]
   },
   {
+		"id": 2,
     "title": "Monitoria diária no Discord",
     "text": [
       "Desde a semana passada, estamos experimentando uma nova rotina na comunidade do Discord, na escola de Programação! Todas as tardes, os alunos e alunas aproveitam uma Monitoria com duração de uma hora, por meio do canal de voz da comunidade. Além da solução de dúvidas sobre carreira e tecnologia, acontece muita interação entre pessoas de diferentes estágios de aprendizagem.",
@@ -16,6 +18,7 @@
     "tags": ["discord", "monitoria"]
   },
   {
+		"id": 3,
     "title": "Começou o Challenge Back-End",
     "text": [
       "Começa hoje o Challenge Back-End, voltado para alunos e alunas da Alura que querem ter um projeto completo para adicionar ao portfólio e aumentar suas chances no mercado tech.",
@@ -25,6 +28,7 @@
     "tags": ["back-end", "node", "java"]
   },
   {
+		"id": 4,
     "title": "Como fazer um bom portfólio?",
     "text": [
       "No último episódio do #HipstersPontoTube, Diogo Pires e Paulo Silveira conversaram sobre a importância do portfólio e quais são as dicas para criar essa ferramenta essencial para todos os níveis de profissionais. Eles também dão algumas dicas de carreira, respondendo perguntas como “quando é o momento certo de me aplicar nas vagas?”."

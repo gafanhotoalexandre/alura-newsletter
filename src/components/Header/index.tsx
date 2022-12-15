@@ -1,4 +1,3 @@
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { ToggleTheme } from './ToggleTheme';
 
 export function Header() {
