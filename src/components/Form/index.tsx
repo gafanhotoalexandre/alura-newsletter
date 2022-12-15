@@ -29,6 +29,7 @@ export function Form({ onSubmit: setUser }: FormProps) {
 				placeholder="Insira seu nome..."
 				setData={(name) => setName(name)}
 				value={name}
+				required={true}
 			/>
 
 			<Input
@@ -36,10 +37,11 @@ export function Form({ onSubmit: setUser }: FormProps) {
 				placeholder="Insira seu e-mail..."
 				setData={(email) => setEmail(email)}
 				value={email}
+				required={true}
 			/>
 
 			<button
-				className="py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none"
+				className="py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black transition-all"
 				type="submit"
 			>Seguir</button>
 		</form>
