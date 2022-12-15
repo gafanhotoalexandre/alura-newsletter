@@ -10,7 +10,7 @@ function App() {
 	const hasUser = Boolean(user);
 
   return (
-		<>
+		<div className="h-screen overflow-hidden">
 			<Header user={user} />
 
 			{hasUser ?
@@ -21,7 +21,7 @@ function App() {
 				/>
 			 }
 
-		</>
+		</div>
   )
 }
 

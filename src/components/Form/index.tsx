@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { UserType } from "../../types/userType";
+import { Input } from "./Input";
 
 interface FormProps {
 	onSubmit: (data: UserType) => void;
@@ -19,22 +20,26 @@ export function Form({ onSubmit: setUser }: FormProps) {
 	}
 
 	return (
-		<form onSubmit={safeSubmit}>
-			<input
+		<form
+			className="h-full flex flex-col items-center justify-center -mt-24 mx-5 gap-10"
+			onSubmit={safeSubmit}
+		>
+			<Input
 				type="text"
 				placeholder="Insira seu nome..."
-				onChange={(e) => setName(e.target.value)}
+				setData={(name) => setName(name)}
 				value={name}
 			/>
 
-			<input
+			<Input
 				type="email"
 				placeholder="Insira seu e-mail..."
-				onChange={(e) => setEmail(e.target.value)}
+				setData={(email) => setEmail(email)}
 				value={email}
 			/>
 
 			<button
+				className="py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none"
 				type="submit"
 			>Seguir</button>
 		</form>
