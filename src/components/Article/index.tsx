@@ -17,7 +17,7 @@ export function Article({ article }: ArticleProps) {
 			<div className="w-full sm:justify-end sm:gap-2 pr-5 hidden sm:flex">
 				{article.tags.map((tag) => (
 					<span
-						className="text-xs uppercase font-bold text-gray-200 bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full hover:bg-alura-200 hover:scale-110 transition-all"
+						className="alura-tag"
 						key={tag}
 					>{tag}</span>
 				))}

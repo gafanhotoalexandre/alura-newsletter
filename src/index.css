@@ -11,7 +11,7 @@
 @layer components {
 	/* form */
 	.alura-input {
-		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 dark:text-gray-200 text-dark-200 rounded-full outline-none placeholder:text-gray-400 dark:placeholder:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold  focus:outline-none transition-all;
+		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 dark:text-gray-200 text-dark-200 rounded-full outline-none placeholder:text-gray-400 dark:placeholder:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold  focus:outline-none transition-all caret-alura-200 dark:caret-alura-100;
 	}
 
 	.alura-focus-ring {
@@ -19,7 +19,7 @@
 	}
 
 	.alura-form-btn {
-		@apply py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black;
+		@apply py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black hover:-translate-y-1 hover:delay-200;
 	}
 	/* /from */
 
@@ -33,5 +33,9 @@
 	}
 	.alura-card-title {
 		@apply text-xl text-alura-200 dark:text-gray-200 font-bold;
+	}
+
+	.alura-tag {
+		@apply text-xs uppercase font-bold text-gray-200 bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full hover:bg-gradient-to-r hover:from-alura-200 hover:scale-110 transition-all;
 	}
 }
