@@ -7,10 +7,10 @@ interface ArticleProps {
 export function Article({ article }: ArticleProps) {
 	return (
 		<div
-			className="p-5 bg-gray-200 flex flex-col gap-2 items-center dark:bg-dark-200 sm:rounded-xl sm:shadow-lg sm:hover:shadow-gray-400 dark:sm:hover:shadow-black"
+			className="alura-card"
 		>
 			<h3
-				className="text-xl text-alura-200 dark:text-gray-200 font-bold"
+				className="alura-card-title"
 			>{article.title}</h3>
 
 			{/* tags */}

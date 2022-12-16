@@ -2,12 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	h1 {
+		@apply text-gray-100 text-xl sm:hover:text-2xl sm:cursor-pointer sm:transition-all;
+	}
+}
+
 @layer components {
+	/* form */
 	.alura-input {
-		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 dark:text-gray-200 text-dark-200 rounded-full outline-none placeholder:text-gray-400 dark:placeholder:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold  focus:outline-none transition-all
+		@apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 dark:text-gray-200 text-dark-200 rounded-full outline-none placeholder:text-gray-400 dark:placeholder:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold  focus:outline-none transition-all;
 	}
 
 	.alura-focus-ring {
-		@apply focus:ring-2 focus:ring-alura-100 focus:ring-offset-2 focus:ring-offset-gray-200 dark:focus:ring-offset-dark-100
+		@apply focus:ring-2 focus:ring-alura-100 focus:ring-offset-2 focus:ring-offset-gray-200 dark:focus:ring-offset-dark-100;
+	}
+
+	.alura-form-btn {
+		@apply py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black;
+	}
+	/* /from */
+
+	/* components */
+	.alura-header {
+		@apply flex h-20 bg-alura-200 dark:bg-dark-200 justify-between items-center px-5 sm:rounded-xl sm:m-5;
+	}
+
+	.alura-card {
+		@apply p-5 bg-gray-200 flex flex-col gap-2 items-center dark:bg-dark-200 sm:rounded-xl sm:shadow-lg sm:hover:shadow-gray-400 dark:sm:hover:shadow-black;
+	}
+	.alura-card-title {
+		@apply text-xl text-alura-200 dark:text-gray-200 font-bold;
 	}
 }

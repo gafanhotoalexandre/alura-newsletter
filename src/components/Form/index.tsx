@@ -41,7 +41,7 @@ export function Form({ onSubmit: setUser }: FormProps) {
 			/>
 
 			<button
-				className="py-1 px-5 w-full max-w-sm uppercase bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black alura-focus-ring transition-all"
+				className="alura-form-btn alura-focus-ring transition-all"
 				type="submit"
 			>Seguir</button>
 		</form>
